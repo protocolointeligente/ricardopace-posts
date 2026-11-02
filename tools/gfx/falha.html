@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<style>
+#t{position:absolute;top:250px;left:90px;right:90px}
+#t .h{font-size:120px;margin-top:30px}
+#ch{position:absolute;top:760px;left:90px;width:900px;height:700px}
+svg text{font-family:I;font-weight:800;fill:#A6A6AB}
+#band{fill:#FF6A00;opacity:.18}
+#bl{font-family:A;font-size:58px;fill:#FF6A00}
+#sub{position:absolute;top:1520px;left:90px;right:90px;font-size:50px;font-weight:800;line-height:1.2}
+#sub span{color:#FF6A00}
+.ref{bottom:250px}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<div id="t"><span class="tag">ANÁLISE DE 2024</span><div class="h">Mais perto da falha, <span class="o">mais músculo</span></div></div>
+<svg id="ch" viewBox="0 0 900 700">
+ <rect id="band" x="560" y="40" width="260" height="520"/>
+ <text id="bl" x="690" y="110" text-anchor="middle">1–3</text>
+ <line x1="60" y1="560" x2="880" y2="560" stroke="#A6A6AB" stroke-width="5"/>
+ <line x1="60" y1="560" x2="60" y2="40" stroke="#A6A6AB" stroke-width="5"/>
+ <path id="ln" d="M80 500 C 300 440, 520 300, 860 130" fill="none" stroke="#FF6A00" stroke-width="14" stroke-linecap="round"/>
+ <circle id="dot" cx="860" cy="130" r="22" fill="#FF6A00"/>
+ <g font-size="34"><text x="90" y="615">6</text><text x="250" y="615">5</text><text x="410" y="615">4</text><text x="570" y="615">3</text><text x="690" y="615">2</text><text x="840" y="615">0</text></g>
+ <text x="470" y="680" font-size="34" text-anchor="middle">repetições sobrando no fim da série</text>
+ <text x="30" y="300" font-size="34" text-anchor="middle" transform="rotate(-90 30 300)">crescimento</text>
+</svg>
+<div id="sub">Na prática: pare com <span>1 a 3 reps sobrando</span></div>
+<div class="ref">Robinson et al., Sports Med, 2024 · gráfico esquemático</div>
+<script>
+const D=window.DUR, A=window.A0; const ln=document.getElementById('ln'); const L=ln.getTotalLength();
+ln.style.strokeDasharray=L; ln.style.strokeDashoffset=L;
+const tl=gsap.timeline({paused:true});
+tl.from('#t',{y:-60,opacity:0,duration:.5},A)
+  .from('#ch',{opacity:0,duration:.4},A+1.6)
+  .to(ln,{strokeDashoffset:0,duration:2.4,ease:'power1.inOut'},A+2.0)
+  .from('#dot',{scale:0,transformOrigin:'center',duration:.3},A+4.4)
+  .from(['#band','#bl'],{opacity:0,duration:.5},A+6.0)
+  .from('#sub',{y:40,opacity:0,duration:.45},A+6.1)
+  .from('.ref',{opacity:0,duration:.4},A+2.0)
+  .to({},{duration:0.01},D);
+window.tl=tl;
+</script></body></html>
