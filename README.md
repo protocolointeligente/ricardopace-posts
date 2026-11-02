@@ -1,2 +1,3 @@
-# ricardopace-posts
-Mídia dos posts do Instagram @personal.ricardopace (hospedagem via GitHub Pages)
+# Mídia dos posts do @personal.ricardopace
+
+Arquivos servidos por GitHub Pages para publicação no Instagram via Windsor.ai. Tudo aqui é conteúdo público.
