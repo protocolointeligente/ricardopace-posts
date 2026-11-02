@@ -1,0 +1,50 @@
+{
+ "scenes": [
+  {
+   "id": "s1",
+   "bg": "/home/claude/fotos/foto-03.png",
+   "cx": 0.62,
+   "text": "Ombro doendo no supino? Calma. Antes de largar o exercício, olha a sua pegada.",
+   "caption": "Ombro *doendo* no supino? Calma. Antes de largar o exercício, olha a sua *pegada.*"
+  },
+  {
+   "id": "s2",
+   "clip": "/home/claude/drive-videos/t278.mp4",
+   "ss": 0.3,
+   "text": "Olha a diferença. Mão aberta demais deixa o ombro numa posição mais exposta. Mão um pouco além da linha dos ombros: é aqui que você quer estar.",
+   "caption": "Olha a diferença. Mão *aberta demais* deixa o ombro *mais exposto.* Mão um pouco *além dos ombros:* é aqui que você quer estar."
+  },
+  {
+   "id": "s3",
+   "clip": "/home/claude/drive-videos/t278.mp4",
+   "ss": 8.6,
+   "text": "Agora a descida. Antes de descer a barra, trava as costas: ombro pra trás e pra baixo, e desce controlando.",
+   "caption": "Agora a *descida.* Antes de descer, *trava as costas:* ombro *pra trás e pra baixo,* e desce *controlando.*"
+  },
+  {
+   "id": "s4",
+   "gfx": "estudo",
+   "nocap": true,
+   "text": "E isso não é achismo. Pesquisadores testaram vinte e uma variações de supino em dez atletas. Com pegada moderada e escápulas encaixadas, a carga estimada no ombro foi menor.",
+   "caption": "",
+   "clip": "/home/claude/reel-v2/supino2/gfx-estudo.mp4",
+   "ss": 0
+  },
+  {
+   "id": "s5",
+   "gfx": "checklist",
+   "nocap": true,
+   "text": "Então, no próximo treino de peito: mão um pouco além dos ombros, costas travadas. E se a dor não passar, procura avaliação.",
+   "caption": "",
+   "clip": "/home/claude/reel-v2/supino2/gfx-checklist.mp4",
+   "ss": 0
+  },
+  {
+   "id": "s6",
+   "bg": "/home/claude/fotos/foto-04.png",
+   "cx": 0.5,
+   "text": "Quer um treino que cuida do seu ombro? Manda treino no direct.",
+   "caption": "Quer um treino que *cuida do seu ombro?* Manda *TREINO* no direct"
+  }
+ ]
+}
