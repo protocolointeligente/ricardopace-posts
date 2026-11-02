@@ -10,7 +10,7 @@ D = Path(sys.argv[1]).resolve()
 W, H, FPS = 1080, 1920, 30
 LEAD, GAP = 0.12, 0.38
 import os
-NODE_MODS = os.environ.get("NODE_MODS", "/home/claude/carrossel-30mais")  # pasta com node_modules de puppeteer e @fontsource/anton
+NODE_MODS = os.environ.get("NODE_MODS", "/home/claude/carrossel-30mais")
 ro = json.loads((D / "roteiro.json").read_text())["scenes"]
 na = {s["id"]: s for s in json.loads((D / "audio/narracao.json").read_text())["scenes"]}
 work = D / "build"; work.mkdir(exist_ok=True)
@@ -30,6 +30,7 @@ scenes[-1]["dur"] = round(scenes[-1]["dur"] + 0.3, 3)
 # 2) blocos de legenda (até 3 palavras), tempo proporcional ao nº de letras
 caps = []
 for s in scenes:
+    if s.get("nocap"): continue
     words = s["caption"].split()
     chunks, cur = [], []
     for w in words:
@@ -112,7 +113,8 @@ grad = work / "grad.png"
 run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", f"color=black:s={W}x{H}", "-vf",
      f"format=rgba,geq=r=0:g=0:b=0:a='if(lt(Y,{H*0.42}),0,min(215,(Y-{H*0.42})/({H*0.58})*260))'", "-frames:v", "1", str(grad)])
 inputs += ["-i", str(grad)]
-g = [f"[0:v][1:v]overlay=0:0,"
+gen = "+".join(f"between(t,{x['start']},{x['start']+x['dur']})" for x in scenes if not x.get("nocap")) or "1"
+g = [f"[0:v][1:v]overlay=0:0:enable='{gen}',"
      f"drawtext=fontfile=/usr/share/fonts/opentype/inter/Inter-Bold.otf:"
      f"text='@personal.ricardopace':fontcolor=white@0.85:fontsize=34:x=(w-tw)/2:y=h-150[v0]"]
 last = "v0"
