@@ -17,3 +17,18 @@ Sequências no estilo dos "Modelos Stories" do Notion (gancho → identificaçã
 
 ## Fotos
 Editadas por IA, aprovadas pelo Ricardo. Fotos com outras pessoas (01, 02, 03) são só ilustração; nunca prova/resultado de aluno.
+
+## Notion (Academia de Posts / RICARDO PACE OS) — curadoria feita em 02/11/2026
+USAR (adaptando ao tom e com fonte quando houver dado):
+- Hooks "Para quem…" e "Dicotomia" (A ou B?) — base principal de temas.
+- Hooks "Erros e Correções" e "Como…" — só a estrutura; tirar os "90%/97%" e números sem fonte.
+- Modelos Stories — só a estrutura (dor → identificação → autoridade → oferta → "responde PALAVRA").
+- Script de Conversão no Direct (7 passos) — descoberta → recomendação → prova REAL → oferta → alternativa.
+- Reels Virais — só os FORMATOS (Certo x Errado, Múltiplos exercícios, Casa x Academia, "Se quer isso, faça isso", Sem falar nada); nunca repostar os vídeos.
+- Modelos Carrosséis — só os temas de mito (agachamento estraga joelho? abdominal engrossa cintura? jejum destrói metabolismo?) para DESMENTIR com estudo.
+- Contraintuitivos/Curiosidades — só os que têm evidência (ex.: dor muscular não mede hipertrofia; força ajuda composição corporal; compostos economizam tempo).
+NÃO USAR:
+- Hooks "Estatísticas Impactantes" (todos os % são inventados), "Transformações Temporais", "Storytelling" (histórias e resultados inventados), "Métodos" (siglas e promessas tipo "triplicar testosterona"), "Polêmicos" (atacam colegas — vedado pelo Código de Ética do CONFEF — e têm afirmações falsas).
+- Legendas de "Posts Estáticos" (números e depoimentos inventados), Swipe File de CTAs com escassez falsa/ofensa ("últimas 10 vagas", "tá gordo… acorda", "10 kg em 8 semanas"), Gerador de Bio Z4 (promessa de kg em X dias).
+- Afirmações falsas presentes no material: cafeína "esgota adrenais", proteína "destrói rins", whey "bloqueia lipólise", água gelada atrapalha digestão, treino de perna "libera hormônio" que cresce braço, cardio "inflama o coração", queimar gordura localizada.
+Prova social, antes/depois e depoimentos: só reais, com autorização escrita.
