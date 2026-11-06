@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<style>
+#t{position:absolute;top:260px;left:90px;right:90px}
+#t .h{font-size:150px;margin-top:30px}
+#list{position:absolute;top:760px;left:90px;right:90px;display:flex;flex-direction:column;gap:56px}
+.it{display:flex;gap:40px;align-items:center}
+.ck{flex:none;width:120px;height:120px;background:#FF6A00;color:#0B0B0C;display:flex;align-items:center;justify-content:center;font-size:80px;font-weight:800}
+.it.w .ck{background:#F7F7F5}
+.tx{font-size:56px;font-weight:800;line-height:1.15}
+.tx small{display:block;font-size:40px;font-weight:600;color:#A6A6AB;margin-top:6px}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<div id="t"><span class="tag">PRÓXIMO TREINO DE OMBRO</span><div class="h">Salva <span class="o">isso</span></div></div>
+<div id="list">
+<div class="it" id="i1"><div class="ck">✓</div><div class="tx">Sobe até a linha do ombro<small>sem encolher</small></div></div>
+<div class="it" id="i2"><div class="ck">✓</div><div class="tx">Peso que você controla<small>sem jogar o corpo</small></div></div>
+<div class="it " id="i3"><div class="ck">✓</div><div class="tx">1 a 3 reps sobrando<small>no fim da série</small></div></div>
+</div>
+<script>
+const D=window.DUR,A=window.A0,AD=D-A-0.38;const tl=gsap.timeline({paused:true});
+tl.from('#t',{y:-60,opacity:0,duration:.5},A)
+  .from('#i1',{x:-120,opacity:0,duration:.45,ease:'back.out(1.6)'},A+AD*0.22)
+  .from('#i2',{x:-120,opacity:0,duration:.45,ease:'back.out(1.6)'},A+AD*0.5)
+  .from('#i3',{x:-120,opacity:0,duration:.45,ease:'back.out(1.6)'},A+AD*0.72)
+  .to({},{duration:0.01},D);
+window.tl=tl;
+</script></body></html>

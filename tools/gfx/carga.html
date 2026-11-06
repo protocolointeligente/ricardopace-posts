@@ -1,0 +1,32 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<style>
+#t1{position:absolute;top:250px;left:0;right:0;text-align:center}
+#big{position:absolute;top:400px;left:0;right:0;text-align:center}
+#num{font-size:330px}#lbl{font-size:80px;margin-top:-10px}
+#chart{position:absolute;top:930px;left:120px;right:120px;height:560px}
+.bar{position:absolute;bottom:110px;width:300px;height:330px;border-radius:14px 14px 0 0;transform-origin:bottom}
+#b1{left:40px;background:#5E5E63}#b2{right:40px;background:#FF6A00}
+.bl{position:absolute;bottom:0;width:380px;text-align:center;font-size:44px;line-height:1.1}
+#l1{left:0}#l2{right:0}
+#axis{position:absolute;bottom:106px;left:0;right:0;height:4px;background:#A6A6AB}
+#ct{position:absolute;top:0;left:0;right:0;text-align:center;font-size:36px;color:#A6A6AB;font-weight:600}
+#stamp{position:absolute;top:1560px;left:0;right:0;text-align:center}
+#stamp div{display:inline-block;border:8px solid #FF6A00;color:#FF6A00;font-family:A;font-size:96px;padding:6px 40px;transform:rotate(-3deg)}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<div id="t1"><span class="tag">NÃO É ACHISMO</span></div>
+<div id="big" class="h"><div id="num" class="o">0</div><div id="lbl">estudos reunidos</div></div>
+<div id="chart"><div id="ct">ganho de músculo (esquema)</div>
+ <div class="bar" id="b1"></div><div class="bar" id="b2"></div><div id="axis"></div>
+ <div class="bl" id="l1">Carga leve</div><div class="bl" id="l2">Carga pesada</div></div>
+<div id="stamp"><div>PARECIDO</div></div>
+<script>
+const D=window.DUR,A=window.A0,AD=D-A-0.38;const tl=gsap.timeline({paused:true});const c={v:0};
+tl.from('#t1',{y:-60,opacity:0,duration:.5},A+0.05)
+ .from('#big',{scale:.6,opacity:0,duration:.5,ease:'back.out(2)'},A+AD*0.3)
+ .to(c,{v:21,duration:1.4,ease:'power2.out',onUpdate:()=>{document.getElementById('num').textContent=Math.round(c.v)}},A+AD*0.3)
+ .from('#chart',{opacity:0,duration:.4},A+AD*0.5)
+ .from('#b1',{scaleY:0,duration:.7,ease:'power2.out'},A+AD*0.55)
+ .from('#b2',{scaleY:0,duration:.7,ease:'power2.out'},A+AD*0.62)
+ .from('#stamp',{scale:2.2,opacity:0,duration:.35,ease:'power3.in'},A+AD*0.8)
+ .to({},{duration:0.01},D);window.tl=tl;
+</script></body></html>

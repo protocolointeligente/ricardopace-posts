@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<style>
+#t{position:absolute;top:250px;left:90px;right:90px;text-align:center}
+#t .h{font-size:120px;margin-top:30px}
+.grp{position:absolute;left:90px;right:90px}
+#g1{top:700px}#g2{top:1120px}
+.gt{font-size:50px;margin-bottom:24px}
+.row{display:flex;align-items:center;gap:24px;margin-bottom:22px}
+.rl{width:200px;font-size:40px;color:#A6A6AB}
+.bar{height:96px;border-radius:0 12px 12px 0;transform-origin:left;display:flex;align-items:center;justify-content:flex-end;padding-right:24px;font-family:A;font-size:64px;color:#0B0B0C}
+.ok{background:#F7F7F5}.bad{background:#FF6A00}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<div id="t"><span class="tag">NÃO É ACHISMO</span><div class="h">Mesma dieta,<br><span class="o">sono diferente</span></div></div>
+<div class="grp" id="g1"><div class="gt">Gordura perdida</div>
+ <div class="row"><div class="rl">8,5 h</div><div class="bar ok" id="a1" style="width:560px">1,4 kg</div></div>
+ <div class="row"><div class="rl">5,5 h</div><div class="bar bad" id="a2" style="width:260px">0,6 kg</div></div></div>
+<div class="grp" id="g2"><div class="gt">Massa magra perdida</div>
+ <div class="row"><div class="rl">8,5 h</div><div class="bar ok" id="b1" style="width:400px">1,5 kg</div></div>
+ <div class="row"><div class="rl">5,5 h</div><div class="bar bad" id="b2" style="width:640px">2,4 kg</div></div></div>
+<script>
+const D=window.DUR,A=window.A0,AD=D-A-0.38;const tl=gsap.timeline({paused:true});
+tl.from('#t',{y:-60,opacity:0,duration:.5},A+0.05)
+ .from('#g1',{opacity:0,duration:.3},A+AD*0.45)
+ .from(['#a1','#a2'],{scaleX:0,duration:.6,stagger:.2,ease:'power2.out'},A+AD*0.5)
+ .from('#g2',{opacity:0,duration:.3},A+AD*0.72)
+ .from(['#b1','#b2'],{scaleX:0,duration:.6,stagger:.2,ease:'power2.out'},A+AD*0.76)
+ .to({},{duration:0.01},D);window.tl=tl;
+</script></body></html>

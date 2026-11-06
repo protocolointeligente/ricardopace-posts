@@ -1,0 +1,117 @@
+[
+ {
+  "file": "2026-11-09-story-pergunta/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-11.jpg",
+  "tag": "ME CONTA",
+  "title": "Qual músculo seu <span class=o>mais demora</span> pra crescer?",
+  "cta": "Responde aqui com o <b>nome do músculo</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-11-09-story-reel/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-12.jpg",
+  "tag": "VÍDEO NOVO NO PERFIL",
+  "title": "Por que o seu ombro <span class=o>não cresce</span> na elevação lateral",
+  "cta": "Toca no meu nome lá em cima e assiste ↑",
+  "arrow": ""
+ },
+ {
+  "file": "2026-11-10-story-pergunta/01.jpg",
+  "bg": "",
+  "tag": "PERGUNTA RÁPIDA",
+  "title": "Quantos minutos você <span class=o>caminha</span> por dia?",
+  "cta": "Responde aqui só com o <b>número</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-11-10-story-carrossel/01.jpg",
+  "bg": "",
+  "card": "/home/claude/ricardopace-posts/2026-11-10-caminhada/01.jpg",
+  "tag": "POST NOVO",
+  "title": "Caminhada <span class=o>emagrece</span> mesmo?",
+  "cta": "Toca no meu nome e arrasta o post",
+  "arrow": "↑",
+  "top": true
+ },
+ {
+  "file": "2026-11-11-story-pergunta/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-07.jpg",
+  "tag": "ME CONTA",
+  "title": "O que mais te tira do treino: <span class=o>tempo, cansaço ou motivação?</span>",
+  "cta": "Responde aqui com <b>uma palavra</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-11-11-story-lembrete/01.jpg",
+  "bg": "",
+  "card": "/home/claude/ricardopace-posts/2026-11-10-caminhada/01.jpg",
+  "tag": "SE VOCÊ PERDEU",
+  "title": "Caminhar 30 minutos <span class=o>resolve?</span>",
+  "cta": "Toca no meu nome e vê o post de ontem",
+  "arrow": "↑",
+  "top": true
+ },
+ {
+  "file": "2026-11-12-story-pergunta/01.jpg",
+  "bg": "",
+  "tag": "PERGUNTA RÁPIDA",
+  "title": "Quantas horas você <span class=o>dormiu</span> essa noite?",
+  "cta": "Responde aqui só com o <b>número</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-11-12-story-consultoria/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-09.jpg",
+  "title": "Treina há anos e o corpo <span class=o>parou de mudar?</span>",
+  "sub": ""
+ },
+ {
+  "file": "2026-11-12-story-consultoria/02.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-09.jpg",
+  "title": "Pode não ser falta de esforço.",
+  "sub": "Muitas vezes falta um <b>plano que acompanhe você</b>: treino, alimentação e rotina ajustados ao que você vive hoje."
+ },
+ {
+  "file": "2026-11-12-story-consultoria/03.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-05.jpg",
+  "title": "Prazer, <span class=o>Ricardo Pace</span>",
+  "sub": "Personal (CREF 014626-G/MG), professor universitário e mestre em Educação Física. Treino com base em ciência, feito pra sua rotina."
+ },
+ {
+  "file": "2026-11-12-story-consultoria/04.jpg",
+  "bg": "",
+  "tag": "CONSULTORIA ONLINE",
+  "title": "O que você <span class=o>recebe</span>",
+  "list": [
+   "Consulta de avaliação",
+   "Estratégia de treino e alimentação",
+   "Plano de treino",
+   "Plano alimentar",
+   "Suplementação, se precisar"
+  ]
+ },
+ {
+  "file": "2026-11-12-story-consultoria/05.jpg",
+  "bg": "",
+  "tag": "BLACK FRIDAY · ATÉ 09/12",
+  "title": "De R$ 249,90 por <span class=o>R$ 199,90</span>/mês",
+  "cta": "Responde <b>TREINO</b> aqui que eu te explico como funciona",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-11-13-story-pergunta/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-06.jpg",
+  "tag": "ME CONTA",
+  "title": "Seu objetivo agora: <span class=o>perder gordura ou ganhar músculo?</span>",
+  "cta": "Responde aqui: <b>GORDURA</b> ou <b>MÚSCULO</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-11-13-story-reel/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-10.jpg",
+  "tag": "VÍDEO NOVO NO PERFIL",
+  "title": "Já começou a treinar e <span class=o>parou?</span> Assiste isso",
+  "cta": "Toca no meu nome lá em cima e assiste ↑",
+  "arrow": ""
+ }
+]
