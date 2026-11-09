@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<style>
+#w{position:absolute;top:330px;left:90px;right:90px}
+#sh{font-size:56px;line-height:1.15}
+#box{margin-top:40px;border:8px solid #FF6A00;padding:34px 44px;background:rgba(11,11,12,.86)}
+#q{font-size:46px}
+#k{font-family:A;font-size:170px;line-height:1;color:#FF6A00;margin-top:10px;transform-origin:0 50%}
+#ex{font-size:38px;color:#A6A6AB;margin-top:14px}
+#f{margin-top:36px;font-size:42px;display:flex;align-items:center;gap:18px}
+#f i{width:20px;height:20px;border-radius:50%;background:#FF6A00;display:block}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<div id="w"><div id="sh">Manda pra quem vive dizendo que <span class="o">começa segunda.</span></div>
+<div id="box"><div id="q">Quer um plano pra você? Envie no direct:</div><div id="k">“TREINO”</div><div id="ex">Black Friday: R$ 199,90/mês até 09/12</div></div>
+<div id="f"><i></i>Segue @personal.ricardopace</div></div>
+<script>
+const T=window.A0;const tl=gsap.timeline({paused:true});
+tl.from('#sh',{y:60,opacity:0,duration:.35,ease:'power4.out'},0.15)
+ .from('#box',{y:80,opacity:0,duration:.4,ease:'power4.out'},T)
+ .from('#k',{scale:1.8,opacity:0,duration:.4,ease:'back.out(2.2)'},T+0.15)
+ .to('#k',{scale:1.08,duration:.35,yoyo:true,repeat:5,ease:'sine.inOut'},T+0.7)
+ .from('#f',{opacity:0,y:30,duration:.3},T+0.6)
+ .to({},{duration:0.01},window.DUR);window.tl=tl;
+</script></body></html>

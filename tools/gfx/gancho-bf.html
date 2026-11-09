@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<style>
+#w{position:absolute;top:330px;left:90px;right:90px;text-align:center}
+.l{font-family:A;text-transform:uppercase;font-size:150px;line-height:1.02}
+#l1{margin-top:30px}
+#st{display:inline-block;border:10px solid #FF6A00;color:#FF6A00;font-family:A;font-size:110px;padding:4px 30px;margin-top:30px;letter-spacing:.03em}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<div id="w"><span class="tag" id="tg">TREINO</span>
+<div class="l" id="l1">Começou.</div><div class="l o" id="l2">Parou.</div><div class="l" id="l3">De novo?</div>
+<div id="st">SEM PLANO</div></div>
+<script>
+const tl=gsap.timeline({paused:true});
+tl.fromTo('#tg',{x:-80,opacity:0},{x:0,opacity:1,duration:.25},0.05)
+ .from('#l1',{y:60,opacity:0,duration:.3,ease:'power4.out'},0.15)
+ .from('#l2',{scale:2.4,rotation:-8,opacity:0,duration:.4,ease:'back.out(2.2)'},1.15)
+ .to('#l2',{x:8,duration:.05,yoyo:true,repeat:3},1.55)
+ .from('#l3',{y:60,opacity:0,duration:.3,ease:'power4.out'},2.25)
+ .to(['#l1','#l2','#l3'],{opacity:.35,duration:.3},4.4)
+ .from('#st',{scale:3,rotation:12,opacity:0,duration:.35,ease:'back.out(2.2)'},4.47)
+ .to('#st',{rotation:-3,duration:.2},4.85)
+ .to({},{duration:0.01},window.DUR);window.tl=tl;
+</script></body></html>
