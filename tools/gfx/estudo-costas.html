@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<style>
+#t1{position:absolute;top:240px;left:0;right:0;text-align:center}
+#big{position:absolute;top:400px;left:0;right:0;text-align:center}
+#num{font-size:330px}
+#lbl{font-size:72px;margin-top:-10px}
+#ath{position:absolute;top:900px;left:0;right:0;text-align:center;font-size:56px;font-weight:800}
+#ath span{color:#FF6A00}
+#chart{position:absolute;top:1030px;left:120px;right:120px;height:520px}
+.bar{position:absolute;bottom:90px;width:300px;border-radius:14px 14px 0 0}
+#b1{left:40px;background:#5E5E63;height:230px}
+#b2{right:40px;background:#FF6A00;height:400px}
+.bl{position:absolute;bottom:0;width:380px;text-align:center;font-size:34px;font-weight:800;line-height:1.15}
+#l1{left:0}#l2{right:0}
+#axis{position:absolute;bottom:88px;left:0;right:0;height:4px;background:#A6A6AB}
+#ct{position:absolute;top:-20px;left:0;right:0;text-align:center;font-size:36px;color:#A6A6AB;font-weight:600}
+#arrow{position:absolute;right:120px;top:40px;font-family:A;font-size:150px;color:#FF6A00}
+#stamp{position:absolute;top:1590px;left:0;right:0;text-align:center}
+#stamp div{display:inline-block;border:8px solid #FF6A00;color:#FF6A00;font-family:A;font-size:84px;padding:6px 34px;transform:rotate(-3deg)}
+.ref{bottom:250px;display:none}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<div id="t1"><span class="tag">NÃO É ACHISMO</span></div>
+<div id="big" class="h"><div id="num" class="o">0</div><div id="lbl">estudos revisados</div></div>
+<div id="ath"><span>amplitude completa</span> x meia amplitude</div>
+<div id="chart"><div id="ct">ganho de força (esquema, sem escala)</div>
+ <div class="bar" id="b1"></div><div class="bar" id="b2"></div><div id="axis"></div>
+ <div class="bl" id="l1">Meia amplitude</div><div class="bl" id="l2">Amplitude completa</div><div id="arrow">↑</div></div>
+<div id="stamp"><div>MAIS FORÇA</div></div>
+<div class="ref">Pallarés et al., Scand J Med Sci Sports, 2021</div>
+<script>
+const D=window.DUR, A=window.A0;
+const tl=gsap.timeline({paused:true});
+const c={v:0};
+tl.from('#t1',{y:-60,opacity:0,duration:.5},A+0.05)
+  .from('#big',{scale:.6,opacity:0,duration:.5,ease:'back.out(2)'},A+1.2)
+  .to(c,{v:16,duration:1.6,ease:'power2.out',onUpdate:()=>{document.getElementById('num').textContent=Math.round(c.v)}},A+1.3)
+  .from('#ath',{y:40,opacity:0,duration:.45},A+3.3)
+  .from('#chart',{opacity:0,duration:.4},A+4.0)
+  .from('#b1',{height:0,duration:.6,ease:'power2.out'},A+4.2)
+  .from('#b2',{height:0,duration:.6,ease:'power2.out'},A+4.5)
+  
+  .from('#arrow',{y:80,opacity:0,duration:.5},A+5.4)
+  .from('#stamp',{scale:2.2,opacity:0,duration:.35,ease:'power3.in'},A+6.2)
+  .to({},{duration:0.01},D);
+window.tl=tl;
+</script></body></html>

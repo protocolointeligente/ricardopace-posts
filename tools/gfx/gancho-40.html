@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<style>
+#w{position:absolute;top:330px;left:90px;right:90px;text-align:center}
+#a{font-size:104px;margin-top:34px}
+#big{font-family:A;font-size:300px;line-height:.9;color:#FF6A00;margin-top:10px}
+#ring{display:none}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<svg id="ring" viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="none" stroke="#3a3a40" stroke-width="5"/>
+<circle id="arc" cx="50" cy="50" r="44" fill="none" stroke="#FF6A00" stroke-width="5" stroke-dasharray="276.5" stroke-dashoffset="276.5" transform="rotate(-90 50 50)"/></svg>
+<div id="w"><span class="tag" id="tg">SEM TEMPO PRO TREINO</span>
+<div id="a" class="h">Sai do trabalho morto e sem tempo?</div>
+<div id="big">40MIN</div></div>
+<script>
+const tl=gsap.timeline({paused:true});
+tl.fromTo('#tg',{x:-80,opacity:0},{x:0,opacity:1,duration:.25},0.05)
+ .from('#a',{y:60,opacity:0,duration:.3,ease:'power4.out'},0.12)
+ .from('#big',{scale:2.4,rotation:-8,opacity:0,duration:.42,ease:'back.out(2.2)'},1.6)
+ .to('#big',{x:8,duration:.05,yoyo:true,repeat:3},2.05)
+ 
+ .to('#big',{scale:1.06,duration:.4,yoyo:true,repeat:3,ease:'sine.inOut'},4.6)
+ .to({},{duration:0.01},window.DUR);window.tl=tl;
+</script></body></html>
