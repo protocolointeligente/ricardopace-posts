@@ -7,11 +7,12 @@ Menos aula, mais linguagem que as pessoas entendem e curtem: fala de academia, e
 - Modelo de referência: Reel da puxada ajoelhado (07/11) — movimento na tela desde o 1º segundo, legenda grande, destaque laranja no músculo.
 - Gancho (1ª cena): clipe 3D/real do exercício ou cena gráfica de gancho (`gfx/gancho-sono.html`, `gfx/gancho-bf.html`), COM legenda (sem `nocap`).
 - CTA (última cena): cena gráfica de CTA (`gfx/cta-sono.html`, `gfx/cta-bf.html`: frase de compartilhamento + caixa "TREINO" + "Segue @personal.ricardopace"), COM legenda. `window.A0` = momento em que a caixa entra.
-- Capa: frame em que gancho e palavra-chave já estão na tela (~2–2,5 s), nunca o 1º frame vazio.
+- Capa (decisão do Ricardo em 14/11/2026): imagem própria, SEM foto dele, tipografia gigante no modelo `gfx/capa.html` (tag + 3 linhas com a do meio em laranja + faixa curta), com o frame do exercício escurecido ao fundo. Nunca um frame do vídeo com legenda pela metade. Texto curto e completo, que funcione sozinho no grid do perfil (recorte 3:4 central).
+- Marca (decisão do Ricardo em 14/11/2026): selo `gfx/selo.png` entrando JUNTO com o gancho (0,15–3,5 s, no topo) e vinheta `gfx/vinheta.mp4` (3,6 s) no FINAL. A vinheta nunca abre o Reel: atrasaria o gancho e derrubaria a retenção dos 3 primeiros segundos.
 - Meio: clipes 3D da biblioteca do Drive (pasta 16974Jnc9--LIYPpe42KhqMWtn4KBHoVC; são de outros criadores: cortar marca d'água e propaganda final; o conector só baixa arquivos < ~2 MB) e cenas gráficas animadas de `gfx/` (contador, gráfico de barras esquemático sem números inventados, checklist).
 - Cena gráfica: copie/adapte um HTML de `gfx/`, renderize com `node gfx/render.js pagina.html <duração> 0.12 saida.mp4` (duração = 0.12 + duração do áudio da cena + 0.38) e use no roteiro como `clip` com `"ss": 0, "nocap": true`.
 - Legenda grande 2–3 palavras, palavra-chave em laranja com `*palavra*`.
-- Passos: `python3 tts.py roteiro.json audio pm_alex 1.12` (skill reels-ricardo-pace) → renderizar gfx → `NODE_MODS=<pasta com puppeteer e @fontsource> python3 reel_v2.py <pasta>` → `python3 mix.py video-mudo.mp4 timeline.json audio reel.mp4 trilha.wav 0.20` → capa = frame em ~0,9 s. Exemplo completo: `exemplo-roteiro.json`.
+- Passos: `python3 tts.py roteiro.json audio pm_alex 1.12` (skill reels-ricardo-pace) → renderizar gfx → `NODE_MODS=<pasta com puppeteer e @fontsource> python3 reel_v2.py <pasta>` → `python3 mix.py video-mudo.mp4 timeline.json audio reel.mp4 trilha.wav 0.20` → escreva `capa.json` na pasta do post → `python3 finaliza_reel.py <pasta-do-post>` (selo + vinheta + capa.jpg + conferência de formato e −14 LUFS; guarda o original em `reel-base.mp4`). Exemplo completo: `exemplo-roteiro.json`.
 
 ## Carrosséis
 Skill carrossel-ricardo-pace, texto curto e conversado: título-pergunta do dia a dia, 1 ideia por slide, no máx. 2–3 frases, referências só no rodapé. Capa `fotos/foto-04.jpg`, CTA `fotos/foto-05.jpg`.

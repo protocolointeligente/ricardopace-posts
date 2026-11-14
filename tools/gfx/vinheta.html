@@ -1,0 +1,32 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<!-- Vinheta de encerramento @personal.ricardopace (3,6 s). Render: node gfx/render.js gfx/vinheta.html 3.6 0 vinheta.mp4 -->
+<style>
+#sw{position:absolute;left:0;top:820px;width:1080px;height:280px;background:#FF6A00;transform-origin:left center}
+#w{position:absolute;top:640px;left:0;right:0;text-align:center}
+.n{font-family:A;text-transform:uppercase;font-size:250px;line-height:.92;letter-spacing:.01em}
+#ln{width:620px;height:12px;background:#FF6A00;margin:44px auto 40px;transform-origin:center}
+#sub{font-size:44px;letter-spacing:.32em;color:#F7F7F5;padding-left:.32em}
+#cref{font-size:32px;letter-spacing:.18em;color:#A6A6AB;font-weight:600;margin-top:26px}
+#at{position:absolute;bottom:330px;left:0;right:0;text-align:center;font-size:38px;color:#FF6A00}
+#fl{position:absolute;inset:0;background:#FFF;opacity:0}
+#bk{position:absolute;inset:0;background:#0B0B0C;opacity:0}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<div id="sw"></div>
+<div id="w"><div class="n" id="n1">Ricardo</div><div class="n o" id="n2">Pace</div>
+<div id="ln"></div><div id="sub">CIÊNCIA E TREINAMENTO</div><div id="cref">CREF 014626-G/MG</div></div>
+<div id="at">@personal.ricardopace</div><div id="fl"></div><div id="bk"></div>
+<script>
+const tl=gsap.timeline({paused:true});
+tl.fromTo('#sw',{scaleX:0},{scaleX:1,duration:.22,ease:'power3.in'},0)
+ .to('#sw',{scaleX:0,transformOrigin:'right center',duration:.22,ease:'power3.out'},.24)
+ .from('#n1',{scale:2.4,opacity:0,filter:'blur(18px)',duration:.32,ease:'power4.out'},.3)
+ .to('#fl',{opacity:.55,duration:.04},.6).to('#fl',{opacity:0,duration:.18},.64)
+ .from('#n2',{scale:2.4,opacity:0,filter:'blur(18px)',duration:.32,ease:'power4.out'},.62)
+ .to('#w',{x:10,duration:.04,yoyo:true,repeat:3},.92)
+ .from('#ln',{scaleX:0,duration:.4,ease:'power3.out'},1.0)
+ .from('#sub',{y:30,opacity:0,letterSpacing:'.6em',duration:.45,ease:'power3.out'},1.2)
+ .from('#cref',{opacity:0,duration:.35},1.5)
+ .from('#at',{y:30,opacity:0,duration:.35,ease:'power3.out'},1.65)
+ .to('#bk',{opacity:1,duration:.3},(window.DUR||3.6)-.3)
+ .to({},{duration:0.01},window.DUR||3.6);window.tl=tl;
+</script></body></html>
