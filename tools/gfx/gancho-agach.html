@@ -1,0 +1,22 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<style>
+#w{position:absolute;top:330px;left:80px;right:80px;text-align:center}
+#a{font-size:120px;margin-top:40px}
+#big{font-family:A;font-size:250px;line-height:.9;color:#FF6A00;margin-top:18px}
+#knee{position:absolute;left:50%;top:880px;width:360px;margin-left:-180px;opacity:.22}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<svg id="knee" viewBox="0 0 100 120"><path d="M30 5 L48 58 L28 112" fill="none" stroke="#F7F7F5" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<circle id="kc" cx="48" cy="58" r="13" fill="none" stroke="#FF6A00" stroke-width="5"/></svg>
+<div id="w"><span class="tag" id="tg">TREINO DE PERNA</span>
+<div id="a" class="h">Agachamento estraga o</div>
+<div id="big">JOELHO?</div></div>
+<script>
+const tl=gsap.timeline({paused:true});
+tl.fromTo('#tg',{x:-80,opacity:0},{x:0,opacity:1,duration:.22},0.03)
+ .from('#a',{y:60,opacity:0,duration:.28,ease:'power4.out'},0.08)
+ .from('#big',{scale:2.4,rotation:-8,opacity:0,duration:.38,ease:'back.out(2.2)'},0.75)
+ .to('#big',{x:8,duration:.05,yoyo:true,repeat:3},1.13)
+ .from('#knee',{opacity:0,duration:.4},0.9)
+ .to('#kc',{attr:{r:20},opacity:.2,duration:.5,yoyo:true,repeat:3},1.0)
+ .to({},{duration:0.01},window.DUR);window.tl=tl;
+</script></body></html>

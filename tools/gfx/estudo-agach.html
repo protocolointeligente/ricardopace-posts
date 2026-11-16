@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<style>
+#t1{position:absolute;top:330px;left:0;right:0;text-align:center}
+#big{position:absolute;top:470px;left:0;right:0;text-align:center}
+#num{font-size:330px}
+#lbl{font-size:72px;margin-top:-10px}
+#ath{position:absolute;top:960px;left:90px;right:90px;text-align:center;font-size:54px;line-height:1.2}
+#ath span{color:#FF6A00}
+#stamp{position:absolute;top:1170px;left:0;right:0;text-align:center}
+#stamp div{display:inline-block;border:10px solid #FF6A00;color:#FF6A00;font-family:A;font-size:120px;padding:4px 44px;transform:rotate(-4deg)}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<div id="t1"><span class="tag">NÃO É ACHISMO</span></div>
+<div id="big" class="h"><div id="num" class="o">+0</div><div id="lbl">estudos revisados</div></div>
+<div id="ath"><span>Agachamento profundo</span> bem feito<br>não aumentou o risco</div>
+<div id="stamp"><div>MITO</div></div>
+<script>
+const D=window.DUR, A=window.A0;
+const tl=gsap.timeline({paused:true});const c={v:0};
+tl.from('#t1',{y:-60,opacity:0,duration:.4},A)
+  .from('#big',{scale:.6,opacity:0,duration:.45,ease:'back.out(2)'},A+0.9)
+  .to(c,{v:160,duration:1.5,ease:'power2.out',onUpdate:()=>{document.getElementById('num').textContent='+'+Math.round(c.v)}},A+1.0)
+  .from('#ath',{y:40,opacity:0,duration:.45},A+3.9)
+  .from('#stamp',{scale:2.4,opacity:0,duration:.32,ease:'power3.in'},A+6.3)
+  .to('#stamp',{x:6,duration:.05,yoyo:true,repeat:3},A+6.62)
+  .to({},{duration:0.01},D);
+window.tl=tl;
+</script></body></html>

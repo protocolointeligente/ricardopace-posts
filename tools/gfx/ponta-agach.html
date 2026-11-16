@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<style>
+#t{position:absolute;top:330px;left:90px;right:90px;text-align:center}
+#t .h{font-size:112px;margin-top:30px}
+#sub{position:absolute;top:700px;left:90px;right:90px;text-align:center;font-size:48px;color:#A6A6AB;font-weight:600}
+#chart{position:absolute;top:780px;left:120px;right:120px;height:480px}
+#ct{position:absolute;top:0;left:0;right:0;text-align:center;font-size:32px;color:#A6A6AB;font-weight:600}
+.bar{position:absolute;bottom:80px;width:300px;border-radius:14px 14px 0 0}
+#b1{left:40px;background:#5E5E63;height:150px}
+#b2{right:40px;background:#FF6A00;height:330px}
+.bl{position:absolute;bottom:0;width:380px;text-align:center;font-size:40px;font-weight:800}
+#l1{left:0}#l2{right:0}
+#axis{position:absolute;bottom:78px;left:0;right:0;height:4px;background:#A6A6AB}
+#ar{position:absolute;top:120px;left:330px;font-family:A;font-size:120px;color:#FF6A00}
+#stamp{position:absolute;top:1275px;left:0;right:0;text-align:center}
+#stamp div{display:inline-block;border:8px solid #FF6A00;color:#FF6A00;font-family:A;font-size:76px;padding:4px 30px;transform:rotate(-3deg)}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<div id="t"><span class="tag">JOELHO NA PONTA DO PÉ</span><div class="h">Travar o joelho <span class="o">resolve?</span></div></div>
+<div id="sub">Joelho travado pra trás:</div>
+<div id="chart"><div id="ct">esforço (esquema, sem escala)</div>
+ <div class="bar" id="b1"></div><div class="bar" id="b2"></div><div id="axis"></div><div id="ar">→</div>
+ <div class="bl" id="l1">Joelho</div><div class="bl" id="l2">Quadril e lombar</div></div>
+<div id="stamp"><div>A CARGA SÓ MUDA DE LUGAR</div></div>
+<script>
+const D=window.DUR, A=window.A0;
+const tl=gsap.timeline({paused:true});
+tl.from('#t',{y:-60,opacity:0,duration:.4},A)
+  .from('#sub',{opacity:0,y:30,duration:.35},A+2.0)
+  .from('#chart',{opacity:0,duration:.35},A+2.2)
+  .from('#b1',{height:0,duration:.5,ease:'power2.out'},A+2.4)
+  .from('#ar',{x:-60,opacity:0,duration:.4},A+3.9)
+  .from('#b2',{height:0,duration:.7,ease:'power2.out'},A+4.5)
+  .from('#stamp',{scale:2.2,opacity:0,duration:.32,ease:'power3.in'},A+5.2)
+  .to({},{duration:0.01},D);
+window.tl=tl;
+</script></body></html>
