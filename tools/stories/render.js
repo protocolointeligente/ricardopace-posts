@@ -13,7 +13,7 @@ const html=`<!doctype html><html><head><meta charset="utf-8"><style>
 .sh{position:absolute;inset:0;background:${s.bg?'linear-gradient(180deg,rgba(11,11,12,.55) 0%,rgba(11,11,12,.35) 35%,rgba(11,11,12,.85) 62%,rgba(11,11,12,.95) 100%)':'none'}}
 .w{position:absolute;left:90px;right:90px;${s.top?'top:300px':'bottom:330px'}}
 .tag{display:inline-block;background:#FF6A00;color:#0B0B0C;font-weight:800;font-size:34px;letter-spacing:.12em;padding:14px 24px;margin-bottom:34px}
-.t{font-family:A;text-transform:uppercase;font-size:118px;line-height:.98}.o{color:#FF6A00}
+.t{font-family:A;text-transform:uppercase;font-size:118px;line-height:1.06}.o{color:#FF6A00}
 .sub{font-size:50px;font-weight:600;line-height:1.3;margin-top:36px}.sub b{color:#FF6A00;font-weight:800}
 .cta{margin-top:50px;font-size:50px;font-weight:600;line-height:1.25;border-left:10px solid #FF6A00;padding-left:30px}.cta b{color:#FF6A00;font-weight:800}
 .ar{font-family:A;font-size:140px;color:#FF6A00;margin-top:24px}
