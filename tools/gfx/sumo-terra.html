@@ -1,0 +1,53 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<style>
+#t{position:absolute;top:320px;left:90px;right:90px}
+#t .h{font-size:112px;margin-top:26px}
+#fig{position:absolute;top:640px;left:140px;width:800px;height:640px}
+#foco{position:absolute;top:1300px;left:90px;right:90px;text-align:center}
+#foco div{display:inline-block;border:8px solid #FF6A00;color:#FF6A00;font-family:A;font-size:74px;padding:6px 34px;transform:rotate(-2deg)}
+#ref{top:1440px}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<div id="t"><span class="tag">SUMÔ</span><div class="h">Pés bem <span class="o">abertos,</span> tronco mais em pé</div></div>
+<svg id="fig" viewBox="-330 -480 660 540">
+ <line x1="-380" y1="20" x2="380" y2="20" stroke="#3a3a3f" stroke-width="8"/>
+ <g id="body" stroke-linecap="round" stroke-linejoin="round" fill="none">
+  <path id="leg" stroke="#F7F7F5" stroke-width="30"/>
+  <path id="hl" stroke="#FF6A00" stroke-width="22" opacity=".95"/>
+  <path id="tor" stroke="#F7F7F5" stroke-width="40"/>
+  <path id="arm" stroke="#D9D9DC" stroke-width="20"/>
+  <circle id="head" r="38" fill="#F7F7F5" stroke="none"/>
+  <circle id="plate" r="62" fill="none" stroke="#FF6A00" stroke-width="14"/>
+ </g>
+</svg>
+<div id="foco"><div>+ COXA DA FRENTE</div></div>
+<div class="ref" id="ref">esquema ilustrativo</div>
+<script>
+const D=window.DUR,A=window.A0;
+const L={s:170,t:175,b:230,a:190}, rad=d=>d*Math.PI/180;
+const P={a_s:0,a_t:0,a_b:0};
+const BOT={a_s:28,a_t:72,a_b:38}, HL='post';
+function draw(){
+ const k=[L.s*Math.sin(rad(P.a_s)), -L.s*Math.cos(rad(P.a_s))];
+ const h=[k[0]-L.t*Math.sin(rad(P.a_t)), k[1]-L.t*Math.cos(rad(P.a_t))];
+ const sh=[h[0]+L.b*Math.sin(rad(P.a_b)), h[1]-L.b*Math.cos(rad(P.a_b))];
+ const hd=[h[0]+(L.b+50)*Math.sin(rad(P.a_b)), h[1]-(L.b+50)*Math.cos(rad(P.a_b))];
+ const hand=[sh[0], sh[1]+L.a];
+ const pl=[hand[0], Math.min(hand[1], -45)];
+ const set=(id,d)=>document.getElementById(id).setAttribute('d',d);
+ set('leg',`M0 0 L${k} L${h}`); set('tor',`M${h} L${sh}`); set('arm',`M${sh} L${hand}`);
+ // destaque: atrás (posterior) ou na frente (quadríceps) da coxa
+ const nx=Math.cos(rad(P.a_t)), ny=-Math.sin(rad(P.a_t)); const o=HL=='post'?-1:1, off=20*o;
+ const m1=[k[0]+(h[0]-k[0])*.12+nx*off*-1, k[1]+(h[1]-k[1])*.12+ny*off*-1], m2=[k[0]+(h[0]-k[0])*.88+nx*off*-1, k[1]+(h[1]-k[1])*.88+ny*off*-1];
+ set('hl',`M${m1} L${m2}`);
+ const he=document.getElementById('head'); he.setAttribute('cx',hd[0]); he.setAttribute('cy',hd[1]);
+ const p=document.getElementById('plate'); p.setAttribute('cx',pl[0]); p.setAttribute('cy',pl[1]);
+}
+draw();
+const tl=gsap.timeline({paused:true,onUpdate:draw});
+tl.from('#t',{y:-60,opacity:0,duration:.4},0.02)
+  .from('#fig',{opacity:0,duration:.3},0.15);
+let t=0.35; while(t<D-0.2){ tl.to(P,{...BOT,duration:.75,ease:'sine.inOut',onUpdate:draw},t).to(P,{a_s:0,a_t:0,a_b:0,duration:.75,ease:'sine.inOut',onUpdate:draw},t+0.85); t+=1.8; }
+tl.from('#foco',{scale:2.2,opacity:0,duration:.32,ease:'power3.in'},A+(D-A-0.38)*0.62)
+  .to({},{duration:0.01},D);
+window.tl=tl;
+</script></body></html>
