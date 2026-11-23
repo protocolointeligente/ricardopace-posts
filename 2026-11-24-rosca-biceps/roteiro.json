@@ -2,43 +2,50 @@
  "scenes": [
   {
    "id": "s1",
-   "clip": "/home/claude/drive-videos/t273.mp4",
+   "clip": "/home/claude/drive-videos/t621-a.mp4",
    "ss": 0,
    "text": "Bíceps não cresce? O erro pode estar na sua rosca.",
    "caption": "Bíceps *não cresce?* O erro pode estar na sua *rosca.*"
   },
   {
    "id": "s2",
-   "clip": "/home/claude/drive-videos/t273.mp4",
-   "ss": 0.5,
-   "text": "Olha o de cima: o cotovelo vai pra frente e o ombro entra pra ajudar. No de baixo, o cotovelo fica parado, e quem trabalha é o bíceps.",
-   "caption": "Em cima: o cotovelo *vai pra frente* e o *ombro* entra pra ajudar. Embaixo: cotovelo *parado,* e quem trabalha é o *bíceps.*"
+   "clip": "/home/claude/drive-videos/t621-a.mp4",
+   "ss": 9.4,
+   "text": "Erro um: cotovelo aberto pra fora. Fecha os cotovelos na largura dos ombros.",
+   "caption": "Erro 1: cotovelo *aberto pra fora.* Fecha na *largura dos ombros.*"
   },
   {
    "id": "s3",
-   "clip": "/home/claude/drive-videos/t621-cut.mp4",
-   "ss": 0,
-   "text": "Segundo erro: cortar a descida. Desce até o braço ficar quase esticado, sem largar o peso.",
-   "caption": "Segundo erro: *cortar a descida.* Desce até o braço ficar *quase esticado,* sem largar o peso."
+   "clip": "/home/claude/drive-videos/t621-a.mp4",
+   "ss": 0.2,
+   "text": "Erro dois: punho dobrado pra trás. Mantém o punho reto, na linha do antebraço.",
+   "caption": "Erro 2: *punho dobrado* pra trás. Mantém o punho *reto.*"
   },
   {
    "id": "s4",
-   "nocap": true,
-   "caption": "",
-   "text": "E não é achismo. Num estudo com iniciantes, quem treinou a rosca na parte de baixo, com o braço mais esticado, aumentou oito vírgula nove por cento a espessura do músculo. Quem treinou só a parte de cima, três vírgula quatro.",
-   "clip": "/home/claude/ricardopace-posts/2026-11-24-rosca-biceps/gfx/estudo.mp4",
-   "ss": 0
+   "clip": "/home/claude/drive-videos/t621-a.mp4",
+   "ss": 13.4,
+   "text": "Erro três: travar o cotovelo lá embaixo, ou cortar a descida no meio. Desce até o braço ficar quase esticado.",
+   "caption": "Erro 3: *travar o cotovelo* ou *cortar a descida.* Desce até ficar *quase esticado.*"
   },
   {
    "id": "s5",
    "nocap": true,
    "caption": "",
-   "text": "No próximo treino de braço: cotovelo parado, desce até esticar, e sobe sem balançar o corpo.",
-   "clip": "/home/claude/ricardopace-posts/2026-11-24-rosca-biceps/gfx/checklist.mp4",
+   "text": "E não é achismo. Num estudo com iniciantes, treinar a rosca na parte com o braço mais esticado aumentou oito vírgula nove por cento a espessura do músculo. Na parte de cima, três vírgula quatro.",
+   "clip": "/home/claude/ricardopace-posts/2026-11-24-rosca-biceps/gfx/estudo.mp4",
    "ss": 0
   },
   {
    "id": "s6",
+   "nocap": true,
+   "caption": "",
+   "text": "No próximo treino de braço: cotovelo fechado, punho reto, e desce até quase esticar.",
+   "clip": "/home/claude/ricardopace-posts/2026-11-24-rosca-biceps/gfx/checklist.mp4",
+   "ss": 0
+  },
+  {
+   "id": "s7",
    "nocap": true,
    "caption": "",
    "text": "Manda pra quem treina braço toda semana e não vê diferença. Quer seu treino montado? Manda treino no direct.",
