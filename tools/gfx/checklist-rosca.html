@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<style>
+#t{position:absolute;top:320px;left:90px;right:90px}
+#t .h{font-size:120px;margin-top:30px}
+#list{position:absolute;top:700px;left:90px;right:90px;display:flex;flex-direction:column;gap:46px}
+.it{display:flex;gap:40px;align-items:center}
+.ck{flex:none;width:110px;height:110px;background:#FF6A00;color:#0B0B0C;display:flex;align-items:center;justify-content:center;font-size:74px;font-weight:800}
+.tx{font-size:54px;font-weight:800;line-height:1.15}
+.tx small{display:block;font-size:38px;font-weight:600;color:#A6A6AB;margin-top:6px}
+#warn{position:absolute;top:1330px;left:90px;right:90px;font-size:42px;color:#F7F7F5;border-left:10px solid #FF6A00;padding-left:28px}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<div id="t"><span class="tag">PRÓXIMO TREINO</span><div class="h">Rosca <span class="o">do jeito certo</span></div></div>
+<div id="list">
+<div class="it" id="i1"><div class="ck">✓</div><div class="tx">Cotovelo parado<small>do lado do corpo</small></div></div>
+<div class="it" id="i2"><div class="ck">✓</div><div class="tx">Desce até esticar<small>sem largar o peso</small></div></div>
+<div class="it" id="i3"><div class="ck">✓</div><div class="tx">Sobe sem balançar<small>o corpo fica quieto</small></div></div>
+</div>
+<div id="warn">Dor no cotovelo? Procura avaliação.</div>
+<script>
+const D=window.DUR, A=window.A0, AD=D-A-0.38;
+const tl=gsap.timeline({paused:true});
+tl.from('#t',{y:-60,opacity:0,duration:.4},0.02)
+  .from('#i1',{x:-120,opacity:0,duration:.38,ease:'back.out(1.6)'},A+AD*0.05)
+  .from('#i2',{x:-120,opacity:0,duration:.38,ease:'back.out(1.6)'},A+AD*0.45)
+  .from('#i3',{x:-120,opacity:0,duration:.38,ease:'back.out(1.6)'},A+AD*0.75)
+  .from('#warn',{opacity:0,y:30,duration:.3},A+AD*0.85)
+  .to({},{duration:0.01},D);
+window.tl=tl;
+</script></body></html>

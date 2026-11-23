@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script src="gsap.min.js"></script>
+<style>
+#t1{position:absolute;top:300px;left:0;right:0;text-align:center}
+#big{position:absolute;top:420px;left:0;right:0;text-align:center}
+#num{font-size:300px}#lbl{font-size:72px;margin-top:-10px}
+#chart{position:absolute;top:840px;left:120px;right:120px;height:500px}
+.bar{position:absolute;bottom:120px;width:300px;border-radius:14px 14px 0 0;transform-origin:bottom}
+#b1{left:40px;background:#5E5E63;height:110px}#b2{right:40px;background:#FF6A00;height:290px}
+.bl{position:absolute;bottom:0;width:380px;text-align:center;font-size:44px;line-height:1.1}
+#l1{left:0}#l2{right:0}
+#axis{position:absolute;bottom:116px;left:0;right:0;height:4px;background:#A6A6AB}
+#ct{position:absolute;top:0;left:0;right:0;text-align:center;font-size:36px;color:#A6A6AB;font-weight:600}
+#stamp{position:absolute;top:1370px;left:0;right:0;text-align:center}
+#stamp div{display:inline-block;border:8px solid #FF6A00;color:#FF6A00;font-family:A;font-size:84px;padding:6px 36px;transform:rotate(-3deg)}
+</style></head><body><div class="bg"></div><div class="grid"></div>
+<div id="t1"><span class="tag">NÃO É ACHISMO</span></div>
+<div id="big" class="h"><div id="num" class="o">0,0%</div><div id="lbl">mais espessura no bíceps</div></div>
+<div id="chart"><div id="ct">5 semanas de treino, mesma rosca</div>
+ <div class="bar" id="b1"></div><div class="bar" id="b2"></div><div id="axis"></div>
+ <div class="bl" id="l1">Parte de cima<br><b class="o">3,4%</b></div><div class="bl" id="l2">Braço esticado<br><b class="o">8,9%</b></div></div>
+<div id="stamp"><div>DESCE ATÉ ESTICAR</div></div>
+<script>
+const D=window.DUR,A=window.A0,AD=D-A-0.38;const tl=gsap.timeline({paused:true});const c={v:0};
+tl.from('#t1',{y:-60,opacity:0,duration:.45},A+0.02)
+ .from('#big',{scale:.6,opacity:0,duration:.45,ease:'back.out(2)'},A+AD*0.22)
+ .to(c,{v:8.9,duration:1.1,ease:'power2.out',onUpdate:()=>{document.getElementById('num').textContent=c.v.toFixed(1).replace('.',',')+'%'}},A+AD*0.22)
+ .from('#chart',{opacity:0,duration:.35},A+AD*0.45)
+ .from('#b1',{scaleY:0,duration:.6,ease:'power2.out'},A+AD*0.5)
+ .from('#b2',{scaleY:0,duration:.7,ease:'power2.out'},A+AD*0.62)
+ .from('#stamp',{scale:2.2,opacity:0,duration:.32,ease:'power3.in'},A+AD*0.84)
+ .to({},{duration:0.01},D);window.tl=tl;
+</script>
+<div class="ref" style="top:1540px">Sato et al., Front Physiol, 2021 (32 iniciantes)</div></body></html>
