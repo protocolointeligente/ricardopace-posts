@@ -1,1 +1,7 @@
 __pycache__/
+# intermediários de produção dos Reels (regeneráveis)
+20*/audio/
+20*/build/
+20*/gfx/
+20*/timeline.json
+20*/video-mudo.mp4
