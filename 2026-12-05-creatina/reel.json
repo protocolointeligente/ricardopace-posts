@@ -1,0 +1,48 @@
+{
+ "voice": "pm_alex",
+ "speed": 1.12,
+ "scenes": [
+  {
+   "type": "gancho",
+   "tag": "SUPLEMENTO",
+   "l1": "Creatina",
+   "big": "VALE A PENA",
+   "l3": "depois dos 30?",
+   "text": "Creatina vale a pena depois dos trinta?",
+   "caption": "Creatina *vale a pena* depois dos 30?"
+  },
+  {
+   "type": "numero",
+   "tag": "NÃO É ACHISMO",
+   "num": 22,
+   "label": "estudos, 721 pessoas",
+   "note": "Pessoas mais velhas, com musculação:<br><o>+1,37 kg de massa magra</o> com creatina.",
+   "ref": "Chilibeck et al., Open Access J Sports Med 2017 (meta-análise)",
+   "text": "Uma meta-análise com vinte e dois estudos, em pessoas mais velhas fazendo musculação: quem tomou creatina ganhou, em média, um vírgula trinta e sete quilo a mais de massa magra."
+  },
+  {
+   "type": "frase",
+   "kicker": "MAS ATENÇÃO",
+   "title": "Ajuda o treino, <o>não substitui</o>",
+   "sub": "Medindo o músculo direto na imagem, outra revisão viu um efeito <o>pequeno</o>.",
+   "text": "Mas atenção: em outra revisão, medindo o músculo direto na imagem, o efeito foi pequeno. Ajuda o treino, não substitui.",
+   "caption": "Ajuda o treino, *não substitui.*"
+  },
+  {
+   "type": "lista",
+   "title": "Na <o>prática</o>",
+   "items": [
+    "Só funciona <span class=o>com treino</span>",
+    "Todo dia, <span class=o>sem pausa</span>",
+    "Na dúvida, <span class=o>pergunta pra quem te acompanha</span>"
+   ],
+   "text": "Na prática: só funciona com treino, se tomar, é todo dia, e na dúvida, pergunta pra quem te acompanha."
+  },
+  {
+   "type": "cta",
+   "share": "Manda pra quem <o>tem medo de creatina</o>",
+   "text": "Manda pra quem tem medo de creatina. Quer o seu treino montado? Manda treino no direct.",
+   "caption": "Quer o seu *treino montado?* Manda *TREINO* no direct."
+  }
+ ]
+}

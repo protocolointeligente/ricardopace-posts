@@ -1,0 +1,58 @@
+{
+ "voice": "pm_alex",
+ "speed": 1.12,
+ "scenes": [
+  {
+   "type": "gancho",
+   "tag": "BARRIGA",
+   "l1": "Abdominal todo dia",
+   "big": "NÃO SECA",
+   "l3": "a barriga",
+   "x": true,
+   "text": "Abdominal todo dia não seca a sua barriga.",
+   "caption": "Abdominal todo dia *não seca* a barriga."
+  },
+  {
+   "type": "numero",
+   "tag": "NÃO É ACHISMO",
+   "num": 6,
+   "label": "semanas de abdominal",
+   "note": "7 exercícios, 5x por semana.<br>A gordura da barriga <o>não mudou</o>.",
+   "stamp": "MITO",
+   "ref": "Vispute et al., J Strength Cond Res 2011 (24 pessoas)",
+   "text": "Num estudo, vinte e quatro pessoas fizeram sete exercícios de abdominal, cinco vezes por semana, durante seis semanas. A gordura da barriga não mudou."
+  },
+  {
+   "type": "frase",
+   "kicker": "ENTÃO SERVE PRA QUÊ?",
+   "title": "Fortalece, <o>não derrete</o>",
+   "sub": "Quem fez abdominal ficou <o>mais resistente</o>. Só não perdeu gordura no lugar.",
+   "text": "O abdominal deixou o músculo mais resistente. Só não tirou a gordura do lugar.",
+   "caption": "Fortalece, *não derrete.*"
+  },
+  {
+   "type": "frase",
+   "kicker": "O QUE SECA A BARRIGA",
+   "title": "Perder gordura <o>no corpo todo</o>",
+   "sub": "Comer um pouco abaixo do que você gasta. A barriga vai junto, <o>no tempo dela</o>.",
+   "text": "O que seca a barriga é perder gordura no corpo todo: comer um pouco abaixo do que você gasta. A barriga vai junto, no tempo dela.",
+   "caption": "Perder gordura *no corpo todo.* A barriga vai *junto.*"
+  },
+  {
+   "type": "lista",
+   "title": "Pra <o>secar</o>",
+   "items": [
+    "Leve <span class=o>déficit calórico</span>",
+    "<span class=o>Musculação</span> pra manter o músculo",
+    "<span class=o>Proteína</span> e passos no dia"
+   ],
+   "text": "Pra secar: leve déficit calórico, musculação pra manter o músculo, proteína e passos no dia."
+  },
+  {
+   "type": "cta",
+   "share": "Manda pra quem faz <o>mil abdominais</o> por dia",
+   "text": "Manda pra quem faz mil abdominais por dia. Quer o seu treino montado? Manda treino no direct.",
+   "caption": "Quer o seu *treino montado?* Manda *TREINO* no direct."
+  }
+ ]
+}

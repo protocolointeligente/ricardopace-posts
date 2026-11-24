@@ -131,11 +131,11 @@ CSS = '''
 .kick{font-size:38px;letter-spacing:.18em;color:#A6A6AB;margin-bottom:34px}
 .ti{font-size:128px;line-height:1.0}.ti2{font-size:104px;line-height:1.0}
 .sub{font-size:54px;line-height:1.28;font-weight:700;margin-top:46px;color:#E9E9E6}
-.num{font-size:300px;line-height:.95;margin-top:40px}.lbl{font-size:84px;margin-top:6px}
+.num{font-size:300px;line-height:.95;margin-top:40px;white-space:nowrap}.lbl{font-size:84px;margin-top:6px}
 .note{font-size:50px;line-height:1.25;font-weight:700;margin-top:56px;color:#E9E9E6}
-.stamp{position:absolute;left:0;right:0;top:1080px;text-align:center}
+.stamp{position:absolute;left:0;right:0;top:1060px;text-align:center}
 .stamp div{display:inline-block;border:10px solid #FF6A00;color:#FF6A00;font-family:A;font-size:120px;padding:2px 44px;transform:rotate(-4deg)}
-.ref{position:absolute;left:90px;right:90px;top:1238px;font-size:28px;color:#A6A6AB;font-weight:600;text-align:center}
+.ref{position:absolute;left:90px;right:90px;top:1250px;font-size:28px;color:#A6A6AB;font-weight:600;text-align:center}
 .cols{display:flex;justify-content:center;gap:90px;margin-top:50px;align-items:flex-end}
 .col{width:330px;text-align:center}.val{font-size:96px;margin-bottom:16px;min-height:10px}
 .barw{height:520px;display:flex;align-items:flex-end;justify-content:center}
@@ -195,7 +195,7 @@ def build(pasta):
 <script>
 const M={json.dumps(meta)},C={json.dumps([{k: c[k] for k in ('f', 't')} for c in caps])},TOT={total};
 document.fonts.ready.then(()=>{{
-document.querySelectorAll('.l1,.big').forEach(e=>{{let z=parseFloat(getComputedStyle(e).fontSize);while(e.scrollWidth>e.clientWidth+2&&z>40){{z-=4;e.style.fontSize=z+'px'}}}});
+document.querySelectorAll('.l1,.big,.num').forEach(e=>{{const o0=e.textContent;if(e.dataset.v)e.textContent=o0.replace(/^(.*?)0(.*)$/,(_,a,b)=>a+(+e.dataset.v).toFixed(+e.dataset.d).replace('.',',')+b);let z=parseFloat(getComputedStyle(e).fontSize);while(e.scrollWidth>e.clientWidth+2&&z>40){{z-=4;e.style.fontSize=z+'px'}}e.textContent=o0;}});
 const tl=gsap.timeline({{paused:true}});
 tl.fromTo('#prog',{{scaleX:0}},{{scaleX:1,duration:TOT,ease:'none'}},0);
 tl.fromTo('#grid',{{backgroundPosition:'0px 0px'}},{{backgroundPosition:'0px 900px',duration:TOT,ease:'none'}},0);

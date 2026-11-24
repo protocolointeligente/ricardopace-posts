@@ -1,0 +1,49 @@
+{
+ "voice": "pm_alex",
+ "speed": 1.12,
+ "scenes": [
+  {
+   "type": "gancho",
+   "tag": "CARDIO",
+   "l1": "Cardio faz",
+   "big": "PERDER",
+   "l3": "músculo?",
+   "text": "Cardio faz você perder músculo?",
+   "caption": "Cardio faz *perder músculo?*"
+  },
+  {
+   "type": "numero",
+   "tag": "NÃO É ACHISMO",
+   "num": 43,
+   "label": "estudos comparados",
+   "note": "Musculação + aeróbico vs. só musculação:<br><o>mesmo ganho de músculo</o>.",
+   "stamp": "MITO",
+   "ref": "Schumann et al., Sports Med 2022 (meta-análise)",
+   "text": "Uma meta-análise com quarenta e três estudos comparou musculação com aeróbico contra só musculação. O ganho de músculo foi o mesmo."
+  },
+  {
+   "type": "frase",
+   "kicker": "O QUE CAIU UM POUCO",
+   "title": "Só a <o>força explosiva</o>",
+   "sub": "Principalmente com os dois <o>na mesma sessão</o>.",
+   "text": "O que caiu um pouco foi a força explosiva, principalmente quando os dois eram feitos na mesma sessão.",
+   "caption": "Só a *força explosiva,* com os dois *na mesma sessão.*"
+  },
+  {
+   "type": "lista",
+   "title": "Pra fazer <o>os dois</o>",
+   "items": [
+    "<span class=o>Cardio</span> sem medo",
+    "Se der, <span class=o>separa as sessões</span>",
+    "Musculação <span class=o>continua no plano</span>"
+   ],
+   "text": "Pra fazer os dois: cardio sem medo, se der, separa as sessões, e a musculação continua no plano."
+  },
+  {
+   "type": "cta",
+   "share": "Manda pra quem <o>foge do cardio</o> com medo",
+   "text": "Manda pra quem foge do cardio com medo de perder músculo. Quer o seu treino montado? Manda treino no direct.",
+   "caption": "Quer o seu *treino montado?* Manda *TREINO* no direct."
+  }
+ ]
+}

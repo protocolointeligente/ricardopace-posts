@@ -1,0 +1,57 @@
+{
+ "voice": "pm_alex",
+ "speed": 1.12,
+ "scenes": [
+  {
+   "type": "gancho",
+   "tag": "NUTRIÇÃO",
+   "l1": "Quanta proteína",
+   "big": "POR DIA?",
+   "l3": "pra ganhar músculo",
+   "text": "Quanta proteína você precisa por dia pra ganhar músculo?",
+   "caption": "Quanta *proteína* por dia pra ganhar *músculo?*"
+  },
+  {
+   "type": "frase",
+   "kicker": "A CONTA SIMPLES",
+   "title": "Cerca de <o>1,6 g por quilo</o>",
+   "sub": "Pesa 80 kg? Perto de <o>130 g por dia</o>, somando todas as refeições.",
+   "text": "A conta simples: cerca de um vírgula seis grama por quilo de peso. Quem pesa oitenta quilos, perto de cento e trinta gramas por dia, somando todas as refeições.",
+   "caption": "Cerca de *1,6 g por quilo.* 80 kg: perto de *130 g por dia.*"
+  },
+  {
+   "type": "numero",
+   "tag": "NÃO É ACHISMO",
+   "num": 49,
+   "label": "estudos, 1.863 pessoas",
+   "note": "Acima de <o>1,6 g/kg por dia</o>, o ganho de massa magra <o>parou de subir</o>.",
+   "ref": "Morton et al., Br J Sports Med 2018 (meta-análise)",
+   "text": "Uma meta-análise juntou quarenta e nove estudos, com mil oitocentas e sessenta e três pessoas. Acima de um vírgula seis grama por quilo, o ganho de massa magra parou de aumentar."
+  },
+  {
+   "type": "frase",
+   "kicker": "E DEPOIS DOS 30?",
+   "title": "Com a idade, <o>rende menos</o>",
+   "sub": "No mesmo estudo, o efeito da proteína <o>diminuiu com a idade</o>. Mais um motivo pra não ficar abaixo.",
+   "text": "No mesmo estudo, o efeito da proteína diminuiu com a idade. Mais um motivo pra não ficar abaixo da conta.",
+   "caption": "Com a idade, *rende menos.* Não fica *abaixo da conta.*"
+  },
+  {
+   "type": "lista",
+   "title": "Na <o>prática</o>",
+   "items": [
+    "Proteína em <span class=o>toda refeição</span>",
+    "Some o <span class=o>total do dia</span>",
+    "Bem mais que isso <span class=o>não acelera</span>"
+   ],
+   "text": "Na prática: proteína em toda refeição, some o total do dia, e lembre que comer bem mais que isso não acelera o ganho."
+  },
+  {
+   "type": "cta",
+   "share": "Manda pra quem não sabe <o>quanta proteína come</o>",
+   "q": "Quer treino e dieta montados?",
+   "text": "Manda pra quem não sabe quanta proteína come. Quer treino e dieta montados? Manda treino no direct.",
+   "caption": "Quer treino e dieta *montados?* Manda *TREINO* no direct."
+  }
+ ]
+}

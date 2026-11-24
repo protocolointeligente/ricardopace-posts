@@ -1,0 +1,49 @@
+{
+ "voice": "pm_alex",
+ "speed": 1.12,
+ "scenes": [
+  {
+   "type": "gancho",
+   "tag": "EMAGRECIMENTO",
+   "l1": "Dormiu mal?",
+   "big": "COME MAIS",
+   "l3": "no dia seguinte",
+   "text": "Dormiu mal? No dia seguinte você come mais.",
+   "caption": "Dormiu mal? *Come mais* no dia seguinte."
+  },
+  {
+   "type": "numero",
+   "tag": "NÃO É ACHISMO",
+   "num": 385,
+   "pre": "+",
+   "label": "kcal por dia",
+   "note": "Dormindo menos, as pessoas <o>comeram mais</o>,<br>sem gastar mais.",
+   "ref": "Al Khatib et al., Eur J Clin Nutr 2017 (meta-análise)",
+   "text": "Uma meta-análise mostrou: com sono reduzido, as pessoas comeram, em média, trezentas e oitenta e cinco calorias a mais por dia, sem gastar mais energia."
+  },
+  {
+   "type": "frase",
+   "kicker": "NA PRÁTICA",
+   "title": "É um <o>lanche a mais</o>",
+   "sub": "Todo dia. <o>Atrapalha qualquer dieta.</o>",
+   "text": "É como um lanche a mais, todo dia. Atrapalha qualquer dieta.",
+   "caption": "Um *lanche a mais,* todo dia."
+  },
+  {
+   "type": "lista",
+   "title": "Pra dormir <o>melhor</o>",
+   "items": [
+    "<span class=o>Horário fixo</span> pra deitar",
+    "Tela longe <span class=o>antes de dormir</span>",
+    "Café <span class=o>mais cedo</span> no dia"
+   ],
+   "text": "Pra dormir melhor: horário fixo pra deitar, tela longe antes de dormir, e café mais cedo no dia."
+  },
+  {
+   "type": "cta",
+   "share": "Manda pra quem <o>dorme 5 horas</o> e não emagrece",
+   "text": "Manda pra quem dorme cinco horas e não emagrece. Quer o seu treino montado? Manda treino no direct.",
+   "caption": "Quer o seu *treino montado?* Manda *TREINO* no direct."
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "voice": "pm_alex",
+ "speed": 1.12,
+ "scenes": [
+  {
+   "type": "gancho",
+   "tag": "TREINO",
+   "l1": "Treinar o músculo",
+   "big": "1x OU 3x",
+   "l3": "por semana?",
+   "text": "Treinar o músculo uma ou três vezes por semana: o que faz crescer mais?",
+   "caption": "*1x ou 3x* por semana: o que faz *crescer mais?*"
+  },
+  {
+   "type": "numero",
+   "tag": "NÃO É ACHISMO",
+   "num": 25,
+   "label": "estudos revisados",
+   "note": "Com o mesmo número de séries,<br><o>a frequência não fez diferença</o>.",
+   "stamp": "EMPATE",
+   "ref": "Schoenfeld et al., J Sports Sci 2019 (meta-análise)",
+   "text": "Uma meta-análise com vinte e cinco estudos: com o mesmo número de séries na semana, a frequência não fez diferença no crescimento."
+  },
+  {
+   "type": "frase",
+   "kicker": "ENTÃO O QUE MANDA?",
+   "title": "O <o>total de séries</o> da semana",
+   "sub": "Divide como <o>couber na sua rotina</o>.",
+   "text": "O que manda é o total de séries na semana. Divide como couber na sua rotina.",
+   "caption": "O *total de séries* da semana. Divide como *couber.*"
+  },
+  {
+   "type": "versus",
+   "title": "Mesmas <o>10 séries</o> de peito",
+   "a": {
+    "label": "1 dia:<br>10 séries",
+    "val": "",
+    "h": 0.8
+   },
+   "b": {
+    "label": "2 dias:<br>5 + 5",
+    "val": "",
+    "h": 0.8
+   },
+   "note": "Esquema ilustrativo: <o>mesmo volume</o>, divisão diferente.",
+   "text": "Dez séries de peito num dia, ou cinco e cinco em dois dias: o volume é o mesmo."
+  },
+  {
+   "type": "lista",
+   "title": "Na <o>prática</o>",
+   "items": [
+    "Conte as <span class=o>séries por músculo</span>",
+    "Treino longo e cansado? <span class=o>Divide</span>",
+    "Escolha o que <span class=o>dá pra manter</span>"
+   ],
+   "text": "Na prática: conte as séries por músculo, se o treino ficou longo e cansativo, divide, e escolha o que dá pra manter."
+  },
+  {
+   "type": "cta",
+   "share": "Manda pra quem acha que <o>tem que treinar todo dia</o>",
+   "text": "Manda pra quem acha que tem que treinar todo dia. Quer o seu treino montado? Manda treino no direct.",
+   "caption": "Quer o seu *treino montado?* Manda *TREINO* no direct."
+  }
+ ]
+}

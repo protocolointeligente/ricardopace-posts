@@ -1,0 +1,64 @@
+{
+ "voice": "pm_alex",
+ "speed": 1.12,
+ "scenes": [
+  {
+   "type": "gancho",
+   "tag": "30+",
+   "l1": "Treino em casa",
+   "big": "FUNCIONA?",
+   "l3": "pra ganhar músculo",
+   "text": "Treino em casa funciona pra ganhar músculo?",
+   "caption": "Treino em casa *funciona* pra ganhar músculo?"
+  },
+  {
+   "type": "numero",
+   "tag": "NÃO É ACHISMO",
+   "num": 21,
+   "label": "estudos revisados",
+   "note": "Carga leve ou pesada, <o>até a falha</o>:<br>crescimento <o>parecido</o>.",
+   "ref": "Schoenfeld et al., J Strength Cond Res 2017 (meta-análise)",
+   "text": "Uma meta-análise com vinte e um estudos comparou carga leve e carga pesada, com as séries levadas até a falha. O crescimento foi parecido."
+  },
+  {
+   "type": "frase",
+   "kicker": "O PORÉM",
+   "title": "Força máxima <o>pede carga pesada</o>",
+   "sub": "Pra levantar mais no peso máximo, <o>a carga pesada ganhou</o>.",
+   "text": "O porém: pra força máxima, a carga pesada ganhou.",
+   "caption": "Força máxima *pede carga pesada.*"
+  },
+  {
+   "type": "versus",
+   "title": "Pra <o>músculo</o>",
+   "a": {
+    "label": "Casa:<br>leve, mais reps",
+    "val": "",
+    "h": 0.78
+   },
+   "b": {
+    "label": "Academia:<br>mais pesado",
+    "val": "",
+    "h": 0.82
+   },
+   "note": "Esquema ilustrativo: <o>os dois funcionam</o> se a série chega perto do limite.",
+   "text": "Então: em casa, com carga leve e mais repetições, levando a série perto do limite, dá pra crescer. Na academia, você ganha mais força máxima."
+  },
+  {
+   "type": "lista",
+   "title": "Em <o>casa</o>",
+   "items": [
+    "Série <span class=o>perto do limite</span>",
+    "<span class=o>Mais repetições</span> com carga leve",
+    "Anota e <span class=o>progride</span>"
+   ],
+   "text": "Em casa: série perto do limite, mais repetições com carga leve, e anota pra progredir."
+  },
+  {
+   "type": "cta",
+   "share": "Manda pra quem diz que <o>só cresce na academia</o>",
+   "text": "Manda pra quem diz que só cresce na academia. Quer o seu treino montado? Manda treino no direct.",
+   "caption": "Quer o seu *treino montado?* Manda *TREINO* no direct."
+  }
+ ]
+}

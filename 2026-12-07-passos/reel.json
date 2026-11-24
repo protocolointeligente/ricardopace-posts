@@ -1,0 +1,54 @@
+{
+ "voice": "pm_alex",
+ "speed": 1.12,
+ "scenes": [
+  {
+   "type": "gancho",
+   "tag": "SAÚDE",
+   "l1": "10 mil passos",
+   "big": "É MITO?",
+   "l3": "",
+   "text": "Dez mil passos por dia: é mito?",
+   "caption": "10 mil passos por dia: *é mito?*"
+  },
+  {
+   "type": "numero",
+   "tag": "NÃO É ACHISMO",
+   "num": 15,
+   "label": "estudos, 47 mil adultos",
+   "note": "Mais passos, <o>menor risco de morte</o>,<br>até um certo ponto.",
+   "ref": "Paluch et al., Lancet Public Health 2022 (meta-análise)",
+   "text": "Uma meta-análise com quinze estudos e quarenta e sete mil adultos: quanto mais passos, menor o risco de morte, até um certo ponto."
+  },
+  {
+   "type": "versus",
+   "title": "Onde o benefício <o>estabilizou</o>",
+   "a": {
+    "label": "60+ anos",
+    "val": "6–8 mil",
+    "h": 0.62
+   },
+   "b": {
+    "label": "Menos de 60",
+    "val": "8–10 mil",
+    "h": 0.85
+   },
+   "note": "Passos por dia em que o risco <o>parou de cair</o>.",
+   "text": "Acima de sessenta anos, o benefício estabilizou entre seis e oito mil passos. Abaixo de sessenta, entre oito e dez mil."
+  },
+  {
+   "type": "frase",
+   "kicker": "NA PRÁTICA",
+   "title": "Comece <o>de onde você está</o>",
+   "sub": "Anda hoje um pouco mais que ontem e <o>vai subindo</o>.",
+   "text": "Na prática: comece de onde você está. Anda hoje um pouco mais que ontem, e vai subindo.",
+   "caption": "Comece *de onde você está.* E vai *subindo.*"
+  },
+  {
+   "type": "cta",
+   "share": "Manda pra quem <o>conta passos</o> todo dia",
+   "text": "Manda pra quem conta passos todo dia. Quer o seu treino montado? Manda treino no direct.",
+   "caption": "Quer o seu *treino montado?* Manda *TREINO* no direct."
+  }
+ ]
+}

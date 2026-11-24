@@ -1,0 +1,51 @@
+{
+ "voice": "pm_alex",
+ "speed": 1.12,
+ "scenes": [
+  {
+   "type": "gancho",
+   "tag": "30+",
+   "l1": "Treina e o corpo",
+   "big": "NÃO MUDA?",
+   "l3": "",
+   "text": "Treina, se esforça, e o corpo não muda?",
+   "caption": "Treina, se esforça, e o corpo *não muda?*"
+  },
+  {
+   "type": "frase",
+   "kicker": "O QUE FALTA, QUASE SEMPRE",
+   "title": "Um treino <o>montado pra você</o>",
+   "sub": "Não a ficha genérica. <o>O seu objetivo, a sua rotina.</o>",
+   "text": "O que falta, quase sempre, é um treino montado pra você. Não a ficha genérica: o seu objetivo e a sua rotina.",
+   "caption": "Um treino *montado pra você.* Não a ficha *genérica.*"
+  },
+  {
+   "type": "lista",
+   "tag": "O QUE INCLUI",
+   "title": "A <o>consultoria</o>",
+   "items": [
+    "Consulta de <span class=o>avaliação</span>",
+    "Plano de <span class=o>treino</span> com execução",
+    "Plano <span class=o>alimentar</span>"
+   ],
+   "text": "Na consultoria você tem consulta de avaliação, plano de treino com exercícios e execução, e plano alimentar, com suplementação se precisar."
+  },
+  {
+   "type": "numero",
+   "tag": "BLACK FRIDAY",
+   "num": 199.9,
+   "dec": 2,
+   "pre": "R$ ",
+   "label": "por mês",
+   "note": "Era R$ 249,90. Só até <o>09/12</o>.<br>Pix ou Mercado Pago.",
+   "text": "Na Black Friday, sai de duzentos e quarenta e nove e noventa, e fica cento e noventa e nove e noventa por mês. Só até nove de dezembro."
+  },
+  {
+   "type": "cta",
+   "share": "Faltam <o>5 dias</o>",
+   "q": "Quer garantir o valor?",
+   "text": "Faltam cinco dias. Quer garantir o valor? Manda treino no direct.",
+   "caption": "Faltam *5 dias.* Manda *TREINO* no direct."
+  }
+ ]
+}

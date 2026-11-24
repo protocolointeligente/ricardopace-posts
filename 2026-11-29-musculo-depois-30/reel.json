@@ -1,0 +1,56 @@
+{
+ "voice": "pm_alex",
+ "speed": 1.12,
+ "scenes": [
+  {
+   "type": "gancho",
+   "tag": "30+",
+   "l1": "Acha que passou",
+   "big": "DA IDADE?",
+   "l3": "pra ganhar músculo",
+   "text": "Acha que passou da idade pra ganhar músculo?",
+   "caption": "Acha que *passou da idade* pra ganhar músculo?"
+  },
+  {
+   "type": "numero",
+   "tag": "NÃO É ACHISMO",
+   "num": 49,
+   "label": "estudos com 50+ anos",
+   "note": "Com musculação: média de <o>+1,1 kg de massa magra</o>.",
+   "ref": "Peterson et al., Med Sci Sports Exerc 2011 (1.328 pessoas)",
+   "text": "Uma meta-análise com quarenta e nove estudos, em pessoas acima de cinquenta anos: a musculação aumentou, em média, um vírgula um quilo de massa magra."
+  },
+  {
+   "type": "frase",
+   "kicker": "E SE VOCÊ TEM 30 OU 40?",
+   "title": "Funciona <o>pra você também</o>",
+   "sub": "O que importa é <o>começar e manter</o>.",
+   "text": "Se funciona depois dos cinquenta, funciona pra você. O que importa é começar e manter.",
+   "caption": "Funciona *pra você também.* Começa e *mantém.*"
+  },
+  {
+   "type": "frase",
+   "kicker": "O QUE MUDA COM A IDADE",
+   "title": "A proteína <o>rende menos</o>",
+   "sub": "Capricha nela <o>em toda refeição</o> e sobe a carga aos poucos.",
+   "text": "Com a idade, a proteína rende menos no músculo. Então capricha nela em toda refeição, e sobe a carga aos poucos.",
+   "caption": "Proteína *em toda refeição.* Carga subindo *aos poucos.*"
+  },
+  {
+   "type": "lista",
+   "title": "Depois dos <o>30</o>",
+   "items": [
+    "Musculação <span class=o>toda semana</span>",
+    "<span class=o>Proteína</span> em toda refeição",
+    "Carga subindo <span class=o>aos poucos</span>"
+   ],
+   "text": "Depois dos trinta: musculação toda semana, proteína em toda refeição, e carga subindo aos poucos."
+  },
+  {
+   "type": "cta",
+   "share": "Manda pra quem acha que <o>passou da idade</o>",
+   "text": "Manda pra quem acha que passou da idade. Quer o seu treino montado? Manda treino no direct.",
+   "caption": "Quer o seu *treino montado?* Manda *TREINO* no direct."
+  }
+ ]
+}
