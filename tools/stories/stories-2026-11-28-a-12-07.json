@@ -1,0 +1,182 @@
+[
+ {
+  "file": "2026-11-28-story-pergunta/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-06.jpg",
+  "tag": "ME CONTA",
+  "title": "Você faz <span class=o>abdominal</span> todo treino?",
+  "cta": "Responde aqui: <b>SIM</b> ou <b>NÃO</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-11-29-story-pergunta/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-07.jpg",
+  "tag": "PERGUNTA RÁPIDA",
+  "title": "Você começou a treinar <span class=o>depois dos 30?</span>",
+  "cta": "Responde aqui: <b>SIM</b> ou <b>NÃO</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-11-30-story-pergunta/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-08.jpg",
+  "tag": "ME CONTA",
+  "title": "Você sente o <span class=o>joelho</span> no agachamento?",
+  "cta": "Responde aqui: <b>SIM</b>, <b>ÀS VEZES</b> ou <b>NÃO</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-12-01-story-pergunta/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-09.jpg",
+  "tag": "PERGUNTA RÁPIDA",
+  "title": "Cardio no <span class=o>mesmo dia</span> da musculação?",
+  "cta": "Responde aqui: <b>SIM</b> ou <b>NÃO</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-12-02-story-pergunta/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-10.jpg",
+  "tag": "ME CONTA",
+  "title": "Quantas vezes por semana você <span class=o>treina perna?</span>",
+  "cta": "Responde aqui: <b>1X</b>, <b>2X</b> ou <b>3X</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-12-03-story-pergunta/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-11.jpg",
+  "tag": "PERGUNTA RÁPIDA",
+  "title": "Você treina <span class=o>em casa</span> ou na academia?",
+  "cta": "Responde aqui: <b>CASA</b> ou <b>ACADEMIA</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-12-04-story-pergunta/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-12.jpg",
+  "tag": "ME CONTA",
+  "title": "O que mais te <span class=o>trava</span> hoje?",
+  "cta": "Responde aqui: <b>TEMPO</b>, <b>DIETA</b> ou <b>CONSTÂNCIA</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-12-05-story-pergunta/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-06.jpg",
+  "tag": "PERGUNTA RÁPIDA",
+  "title": "Você toma <span class=o>creatina?</span>",
+  "cta": "Responde aqui: <b>SIM</b>, <b>NÃO</b> ou <b>TENHO DÚVIDA</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-12-06-story-pergunta/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-07.jpg",
+  "tag": "ME CONTA",
+  "title": "Quantas horas você <span class=o>dorme</span> por noite?",
+  "cta": "Responde aqui: <b>MENOS DE 6</b>, <b>6 A 7</b> ou <b>MAIS DE 7</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-12-07-story-pergunta/01.jpg",
+  "bg": "/home/claude/ricardopace-posts/fotos/foto-08.jpg",
+  "tag": "PERGUNTA RÁPIDA",
+  "title": "Você <span class=o>conta seus passos</span> no dia?",
+  "cta": "Responde aqui: <b>SIM</b> ou <b>NÃO</b>",
+  "arrow": "↓"
+ },
+ {
+  "file": "2026-11-28-story-post/01.jpg",
+  "bg": "",
+  "card": "/home/claude/ricardopace-posts/2026-11-28-o-que-seca-barriga/01.jpg",
+  "tag": "POST NOVO",
+  "title": "O que <span class=o>seca a barriga</span>",
+  "cta": "Toca no meu nome e confere o post",
+  "arrow": "",
+  "top": true
+ },
+ {
+  "file": "2026-11-29-story-post/01.jpg",
+  "bg": "",
+  "card": "/home/claude/ricardopace-posts/2026-11-29-musculo-30-regras/01.jpg",
+  "tag": "POST NOVO",
+  "title": "Músculo <span class=o>depois dos 30</span>",
+  "cta": "Toca no meu nome e confere o post",
+  "arrow": "",
+  "top": true
+ },
+ {
+  "file": "2026-11-30-story-post/01.jpg",
+  "bg": "",
+  "card": "/home/claude/ricardopace-posts/2026-11-30-joelho-ponta-pe/01.jpg",
+  "tag": "POST NOVO",
+  "title": "Joelho pode <span class=o>passar da ponta do pé?</span>",
+  "cta": "Toca no meu nome e confere o post",
+  "arrow": "",
+  "top": true
+ },
+ {
+  "file": "2026-12-01-story-post/01.jpg",
+  "bg": "",
+  "card": "/home/claude/ricardopace-posts/2026-12-01-gluteo-hip-thrust/01.jpg",
+  "tag": "POST NOVO",
+  "title": "Hip thrust ou <span class=o>agachamento?</span>",
+  "cta": "Toca no meu nome e confere o post",
+  "arrow": "",
+  "top": true
+ },
+ {
+  "file": "2026-12-02-story-post/01.jpg",
+  "bg": "",
+  "card": "/home/claude/ricardopace-posts/2026-12-02-frequencia-semana/01.jpg",
+  "tag": "POST NOVO",
+  "title": "Quantas vezes <span class=o>treinar cada músculo?</span>",
+  "cta": "Toca no meu nome e confere o post",
+  "arrow": "",
+  "top": true
+ },
+ {
+  "file": "2026-12-03-story-post/01.jpg",
+  "bg": "",
+  "card": "/home/claude/ricardopace-posts/2026-12-03-treino-em-casa/01.jpg",
+  "tag": "POST NOVO",
+  "title": "Em casa <span class=o>dá pra crescer</span>",
+  "cta": "Toca no meu nome e confere o post",
+  "arrow": "",
+  "top": true
+ },
+ {
+  "file": "2026-12-04-story-post/01.jpg",
+  "bg": "",
+  "card": "/home/claude/ricardopace-posts/2026-12-04-bf-faltam-5/01.jpg",
+  "tag": "BLACK FRIDAY",
+  "title": "Faltam <span class=o>5 dias</span>",
+  "cta": "Responde <b>TREINO</b> aqui e garante R$ 199,90",
+  "arrow": "",
+  "top": true
+ },
+ {
+  "file": "2026-12-05-story-post/01.jpg",
+  "bg": "",
+  "card": "/home/claude/ricardopace-posts/2026-12-05-creatina-ciencia/01.jpg",
+  "tag": "POST NOVO",
+  "title": "Creatina: <span class=o>o que a ciência diz</span>",
+  "cta": "Toca no meu nome e confere o post",
+  "arrow": "",
+  "top": true
+ },
+ {
+  "file": "2026-12-06-story-post/01.jpg",
+  "bg": "",
+  "card": "/home/claude/ricardopace-posts/2026-12-06-sono-dieta/01.jpg",
+  "tag": "POST NOVO",
+  "title": "Dormir mal <span class=o>atrapalha a dieta</span>",
+  "cta": "Toca no meu nome e confere o post",
+  "arrow": "",
+  "top": true
+ },
+ {
+  "file": "2026-12-07-story-post/01.jpg",
+  "bg": "",
+  "card": "/home/claude/ricardopace-posts/2026-12-07-passos-por-dia/01.jpg",
+  "tag": "POST NOVO",
+  "title": "Quantos <span class=o>passos por dia?</span>",
+  "cta": "Toca no meu nome e confere o post",
+  "arrow": "",
+  "top": true
+ }
+]
