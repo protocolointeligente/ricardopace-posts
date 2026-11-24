@@ -40,3 +40,9 @@ NÃO USAR:
 - Legendas de "Posts Estáticos" (números e depoimentos inventados), Swipe File de CTAs com escassez falsa/ofensa ("últimas 10 vagas", "tá gordo… acorda", "10 kg em 8 semanas"), Gerador de Bio Z4 (promessa de kg em X dias).
 - Afirmações falsas presentes no material: cafeína "esgota adrenais", proteína "destrói rins", whey "bloqueia lipólise", água gelada atrapalha digestão, treino de perna "libera hormônio" que cresce braço, cardio "inflama o coração", queimar gordura localizada.
 Prova social, antes/depois e depoimentos: só reais, com autorização escrita.
+
+## Atualização de 24/11/2026 (decisão do Ricardo)
+- **Sem clipe 3D de terceiros** (risco de direito autoral; nunca cortar marca d'água). Reels passam a ser 100% animação própria: `python3 tools/reel_anim.py <pasta>` (lê `reel.json`; `PREVIEW=1` gera só a folha de contato em `build/preview.jpg`) → `capa.json` → `python3 tools/finaliza_reel.py <pasta>`. Tipos de cena: gancho, frase, numero, versus, lista, cta. Vídeos reais do Ricardo continuam valendo quando ele mandar.
+- Narração Kokoro em `/home/claude/tts` (modelos do GitHub do kokoro-onnx). Node modules em `/home/claude/carrossel-30mais/node_modules`.
+- Estático "Imagem": `tools/carrossel/imagem.mjs specs.json` + `tools/carrossel/render.mjs` (design system do carrossel). Specs de 26/11–07/12 em `tools/carrossel/imagens-2026-11-26-a-12-07.json`.
+- Meta de volume (24/11): todo dia Reel 11:45 + estático 18:45 + 2 stories (pergunta 11:45, chamada do post 18:45).
