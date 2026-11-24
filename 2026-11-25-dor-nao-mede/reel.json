@@ -1,0 +1,17 @@
+{"voice":"pm_alex","speed":1.12,"scenes":[
+{"type":"gancho","tag":"TREINO","l1":"Dor no dia seguinte","big":"NÃO MEDE","l3":"treino bom","x":true,
+ "text":"Dor no dia seguinte não mede se o treino foi bom.","caption":"Dor no dia seguinte *não mede* treino bom."},
+{"type":"frase","kicker":"DE ONDE VEM ESSA DOR","title":"Músculo fazendo <o>algo novo</o>","sub":"Exercício diferente, carga nova, descida lenta: dói mais. Com as semanas, <o>dói menos</o>.",
+ "text":"Essa dor aparece quando o músculo faz algo novo: um exercício diferente, mais carga, descida lenta. Com as semanas, ela diminui.",
+ "caption":"Aparece quando o músculo faz *algo novo.* Com as semanas, *diminui.*"},
+{"type":"numero","tag":"NÃO É ACHISMO","num":10,"label":"semanas de treino","note":"Na 1ª semana: <o>mais dano no músculo</o>.<br>E isso <o>não teve relação</o> com o crescimento.","ref":"Damas et al., J Physiol 2016 (10 homens)",
+ "text":"Um estudo acompanhou dez homens por dez semanas de treino. Na primeira semana, o dano no músculo era o maior. E esse dano não teve relação com o quanto o músculo cresceu."},
+{"type":"frase","kicker":"E O CRESCIMENTO?","title":"Apareceu quando <o>doía menos</o>","sub":"Nas semanas 3 e 10, com menos dano, a construção do músculo passou a <o>acompanhar o crescimento</o>.",
+ "text":"O crescimento apareceu depois, quando o dano já tinha diminuído. Ou seja: dor não é a régua.",
+ "caption":"Cresceu quando *doía menos.* Dor *não é a régua.*"},
+{"type":"lista","tag":"SALVA ESSA","title":"Meça o treino <o>por isso</o>","items":["Carga ou reps <span class=o>subindo</span>","Esforço <span class=o>perto do limite</span>","<span class=o>Constância</span> na semana"],
+ "text":"Então meça o seu treino por três coisas: carga ou repetições subindo, esforço perto do limite, e constância na semana."},
+{"type":"cta","share":"Manda pra quem acha que <o>sem dor não vale</o>","kw":"TREINO",
+ "text":"Manda pra quem acha que treino sem dor não vale. Quer o seu treino montado? Manda treino no direct.",
+ "caption":"Quer o seu *treino montado?* Manda *TREINO* no direct."}
+]}

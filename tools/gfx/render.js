@@ -6,7 +6,7 @@ const fs = require('fs'), path = require('path'), { execFileSync } = require('ch
   const dir = fs.mkdtempSync('/tmp/gfx-'); const b = await puppeteer.launch({ executablePath: '/usr/bin/google-chrome', args: ['--no-sandbox', '--allow-file-access-from-files'] });
   const p = await b.newPage(); await p.setViewport({ width: 1080, height: 1920 });
   await p.evaluateOnNewDocument((d, a) => { window.DUR = d; window.A0 = a; }, +dur, +a0);
-  await p.goto('file://' + path.resolve(page), { waitUntil: 'load' }); await p.evaluate(() => document.fonts.ready);
+  await p.goto('file://' + path.resolve(page), { waitUntil: 'load' }); await p.evaluate(() => document.fonts.ready); for (let k = 0; k < 100 && !(await p.evaluate(() => !!window.tl)); k++) await new Promise(r => setTimeout(r, 100));
   const n = Math.round(dur * 30);
   for (let i = 0; i < n; i++) { await p.evaluate(t => { window.tl.seek(t, false); return 0; }, i / 30); await p.screenshot({ path: `${dir}/f${String(i).padStart(4, '0')}.jpg`, type: 'jpeg', quality: 90 }); }
   await b.close();
